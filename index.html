@@ -7,13 +7,36 @@
 <body>
 
 <h1>Please Login</h1>
+<table>
+	<tr>
+	<td><h4>Login As: </h4></td>
+	<td>
+	<select>
+	<option value="0">Employer</option>
+	<option value="1">Employee</option>
+	</select>
+	</td>
+	</tr>
+</table>
+
 
 <form action="login.php" method="post">
-	Username: <input type="text" name="user"><br>
-	Password: <input type="password" name="password"><br>
-	<input type="submit" value="Login!"><br><br><br>
-	
-	<a href="http://localhost/OPHION/newuser.php">
-		<input type="button" value="New User">	
-	</a>
+<table>
+	<tr>
+	<td>Username: </td>
+	<td><input type="text" name="user"></td>
+	</tr>
+	<tr>
+	<td>Password: </td>
+	<td><input type="password" name="password"></td>
+	</tr>
+	<tr>
+	<td> <input type="submit" value="Login!"></td>
+	</tr>
+	<tr>
+	<td> <a href="http://localhost/OPHION/newuser.php">
+		<input type="button" value="New User"></a>
+	</td>
+	<tr>
+</table>
 </form>

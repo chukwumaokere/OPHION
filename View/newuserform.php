@@ -5,11 +5,17 @@
 <body>
 <h1>Create New Account</h1>
 
-<form action="/OPHION/newuser.php" method="post"></form>
 
+<form action="/OPHION/newuser.php" method="post"></form>
 
 <table>
 	<tbody>
+		<tr>
+		<td>Account Type: </td>
+		<td><select>
+			<option value="0">Employer</option>
+			<option value="1">Employee</option>
+			</select>
 		<tr>
 			<td>First Name: </td>
 			<td><input type="text" name="first_name" required></td>
@@ -23,7 +29,7 @@
 			<td><input type="text" name="company_name" required></td>
 		</tr>
 		<tr>
-			<td>Store Number: </td>
+			<td>Company ID: </td>
 			<td><input type="text" name="id_number"></td>
 		</tr>
 		<tr>
@@ -334,6 +340,9 @@ $(".phone").keyup(function () {
     	}
 	});
 });
+$('.ui.sidebar')
+.sidebar('toggle')
+;
 </script>
 </body>
 </html>

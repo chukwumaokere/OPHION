@@ -55,4 +55,22 @@ create new database in server
 setting minimum and maximum hours per employee
 
 create class
-sessions and cookies redirect
+sessions and cookies 20 minute timers  redirect
+
+Login form EMployee and Employer option if type = 0 employer if type="1" employee, if 0 CHECK in user for type. if type 0 = 0, login success, employerloginpage.php if type 1=1 login success: employeewelcomepage.php if type does not match return "no user found with these credentials"
+Error: You entered incorrect login credentials. Please try again.
+
+
+create user employee or employer 
+employee company field try to merge with existing compnay database if db does not exist reutrn 'db does not exist'
+each employer is given a company code 
+
+employees can view schedules, view other employees availabiliies and personal info
+can chat on app/message 
+can send request days off
+receive approve or denied requests
+
+moving sidebar
+log out button
+
+Company name not case sensitive so if company ID number matches something, show "a company named: ' ' with ID number ' ' already exists. Merge with that company?"

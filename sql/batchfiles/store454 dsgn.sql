@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-01-14 12:59:47
+Date: 2016-01-15 02:49:10
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -149,10 +149,11 @@ CREATE TABLE `schedule` (
 -- ----------------------------
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
+  `user_type` bit(1) NOT NULL,
   `first_name` varchar(30) NOT NULL,
   `last_name` varchar(80) NOT NULL,
   `company_name` varchar(200) NOT NULL,
-  `id_number` varchar(200) DEFAULT NULL,
+  `company_id` varchar(200) DEFAULT NULL,
   `email` varchar(200) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
@@ -163,7 +164,7 @@ CREATE TABLE `user` (
   `address_line_2` varchar(200) DEFAULT NULL,
   `state_province` varchar(100) NOT NULL,
   `city` varchar(100) NOT NULL,
-  `zip` varchar(10) DEFAULT NULL,
+  `zip` varchar(20) NOT NULL,
   PRIMARY KEY (`email`,`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 

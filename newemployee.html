@@ -10,13 +10,11 @@
 
 <form action="formdata.php" method="post">
 
-Employee ID: <input type="text" name="employee_id"><br>
-Name: <input type="text" name="name"><br>
-Address Line 1: <input type="text" name="address1"><br>
+Employee ID: <input type="text" name="employee_id" required><br>
+Name: <input type="text" name="name" required><br>
+Address Line 1: <input type="text" name="address1" required><br>
 Address Line 2: <input type="text" name="address2"><br>
-City: <input type="text" name="city"><br>
-
-State: <select type="text" name="state">
+State: <select type="text" name="state" required>
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -69,13 +67,16 @@ State: <select type="text" name="state">
 	<option value="WI">Wisconsin</option>
 	<option value="WY">Wyoming</option>
 </select><br>
+City: <input type="text" name="city" required><br>
 
-Zip: <input type="number" name="zip" min="00000" max="99999"><br>
+
+
+Zip: <input type="number" name="zip" min="00000" max="99999" required><br>
 Main Phone: (<input type="text" name="main_phone1" size=3 maxlength="3">) <input type="text" name="main_phone2" size=3 maxlength="3"> - <input type="text" size="4" name="main_phone3" maxlength="4"><br>
   
 Alt Phone: (<input type="text" name="alt_phone1" size=3 maxlength="3">) <input type="text" name="alt_phone2" size=3 maxlength="3"> - <input type="text" size="4" name="alt_phone3" maxlength="4"><br><br>
 
-Employment Status: <select name="is_full_time">
+Employment Status: <select name="is_full_time" required>
   <option value="0">Part-Time</option>
   <option value="1">Full-Time</option>
 </select><br><br><br>
